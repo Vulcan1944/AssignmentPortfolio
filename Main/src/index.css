@@ -5,21 +5,21 @@
 @tailwind utilities;
 
 :root {
-  --bg-base:     #0a0010;   /* Main page background — deep dark purple */
-  --bg-card:     #110018;   /* Card / panel background */
-  --bg-card-alt: #0d001a;   /* Alternate card shade */
+  --bg-base:     #0a0010;   
+  --bg-card:     #110018;   
+  --bg-card-alt: #0d001a;   
 
-  --pink:        #ff2d78;   /* Hot neon pink — primary accent */
-  --pink-glow:   #ff2d7840; /* Pink at 25% — borders and glow halos */
-  --purple:      #bf00ff;   /* Electric purple — secondary accent */
-  --purple-glow: #bf00ff30; /* Purple at 19% */
-  --cyan:        #00f5ff;   /* Neon cyan — tertiary accent */
-  --cyan-glow:   #00f5ff20; /* Cyan at 13% */
-  --yellow:      #ffe600;   /* Synthwave yellow — use sparingly */
+  --pink:        #ff2d78;   
+  --pink-glow:   #ff2d7840; 
+  --purple:      #bf00ff;   
+  --purple-glow: #bf00ff30; 
+  --cyan:        #00f5ff;   
+  --cyan-glow:   #00f5ff20; 
+  --yellow:      #ffe600;  
 
-  --text-primary:   #f0e6ff; /* Soft lavender white */
-  --text-secondary: #c090d8; /* Muted purple */
-  --text-dim:       #604080; /* Dimmed label text */
+  --text-primary:   #f0e6ff; 
+  --text-secondary: #c090d8; 
+  --text-dim:       #604080; 
 
   --shadow-pink:   0 0 8px #ff2d7888,  0 0 25px #ff2d7840, 0 0 60px #ff2d7820;
   --shadow-purple: 0 0 8px #bf00ff88,  0 0 25px #bf00ff40;

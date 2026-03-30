@@ -116,7 +116,7 @@ export default function About() {
               and produce music using FL Studio.
             </p>
             <p>
-              I love the intersection of technology and creativity, and I'm constantly
+              I enjoy the intersection of technology and creativity, and I'm constantly
               working on new projects to sharpen my skills across all these areas.
             </p>
           </div>
