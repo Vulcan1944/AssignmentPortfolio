@@ -1,26 +1,20 @@
 import { Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
 import ProjectCard from '../components/ProjectCard';
-import FrictionlessImage from '';
+import FrictionlessImage from '../Images/Frictionless.png';
 
-/* ================================================================
-   FEATURED PROJECT DATA
-   ================================================================ */
+
 const FEATURED_PROJECT = {
   title: 'Friction-Less',
   description:
     'My current game project, an evolution of Friction-Less Arena. A fast paced story driven game built in Unity. Still in active development with new mechanics and levels being added regularly.',
   tags: ['Unity', 'C#', 'Game Design', '3D Modelling'],
-  github: '#',
   demo: null,
   status: 'In Progress',
   image: FrictionlessImage,
   imageAlt: 'Friction-Less game preview',
 };
 
-/* ================================================================
-   SYNTHWAVE SUN (STATIC)
-   ================================================================ */
 function SynthwaveSun() {
   return (
     <div className="relative mx-auto" style={{ width: '280px', height: '180px' }}>
@@ -50,22 +44,16 @@ function SynthwaveSun() {
 }
 
 
-/* ================================================================
-   HOME PAGE
-   ================================================================ */
 export default function Home() {
   return (
     <main>
 
-      {/* HERO */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20">
         
-        {/* Sun */}
         <div className="mb-6">
           <SynthwaveSun />
         </div>
 
-        {/* Text */}
         <div className="text-center max-w-3xl">
           
           <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl uppercase tracking-wider mb-4">
@@ -74,7 +62,6 @@ export default function Home() {
             <span style={{ color: 'var(--text-primary)' }}>Huxford</span>
           </h1>
 
-          {/* Static subtitle */}
           <p className="font-mono text-lg mb-6" style={{ color: 'var(--cyan)' }}>
             IT Student • Web Developer • Game Developer
           </p>
@@ -98,9 +85,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURED */}
       <section className="py-24 px-6" style={{ borderTop: '1px solid var(--pink-glow)' }}>
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto object-cover">
           <SectionHeading
             label="// Featured"
             title="Latest Project"
@@ -110,7 +96,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
       <section className="py-16 px-6" style={{ borderTop: '1px solid var(--pink-glow)' }}>
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {[

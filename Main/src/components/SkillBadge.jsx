@@ -1,17 +1,5 @@
-/* ============================================================
-   SKILL BADGE COMPONENT  (Reusable)
-   Used on: About page — rendered once per skill in the grid.
-
-   Props:
-     skill — the skill name string e.g. "React"
-     level — proficiency level: 'Learning' | 'Familiar' | 'Proficient'
-
-   To add a new level, add an entry to LEVEL_STYLES below.
-   ============================================================ */
-
 export default function SkillBadge({ skill, level }) {
 
-  /* ── Level colour mapping — edit colours here ── */
   const LEVEL_STYLES = {
     'Learning':  { color: '#ffe600', border: '#ffe60040', bg: '#ffe60010' }, // Yellow
     'Familiar':  { color: '#00f5ff', border: '#00f5ff40', bg: '#00f5ff10' }, // Cyan
@@ -31,10 +19,8 @@ export default function SkillBadge({ skill, level }) {
       }}
       title={`${skill} — ${level}`}
     >
-      {/* Skill name */}
       <span className="font-mono text-sm font-medium">{skill}</span>
 
-      {/* Proficiency level label */}
       <span
         className="font-mono text-xs opacity-60"
         style={{ fontSize: '0.6rem', letterSpacing: '0.1em' }}

@@ -1,18 +1,7 @@
-/* ============================================================
-   SECTION HEADING COMPONENT  (Reusable)
-   Used on: Home, About, Projects pages
-
-   Props:
-     label    — small tag above the title  e.g. "// Skills"
-     title    — main heading text
-     subtitle — optional description paragraph below
-   ============================================================ */
-
 export default function SectionHeading({ label, title, subtitle }) {
   return (
     <div className="mb-14 text-center">
 
-      {/* ── Small eyebrow label ── */}
       {label && (
         <p
           className="font-mono text-xs tracking-[0.25em] uppercase mb-3 inline-block"
@@ -22,14 +11,12 @@ export default function SectionHeading({ label, title, subtitle }) {
         </p>
       )}
 
-      {/* ── Main heading with neon gradient ── */}
       <h2
         className="font-display font-black text-3xl md:text-4xl uppercase tracking-wider text-neon"
       >
         {title}
       </h2>
 
-      {/* ── Decorative neon divider under heading ── */}
       <div className="mt-4 flex items-center justify-center gap-3">
         <div
           className="h-px w-16"
@@ -45,7 +32,6 @@ export default function SectionHeading({ label, title, subtitle }) {
         />
       </div>
 
-      {/* ── Optional subtitle paragraph ── */}
       {subtitle && (
         <p
           className="mt-5 font-body text-base md:text-lg max-w-xl mx-auto leading-relaxed"

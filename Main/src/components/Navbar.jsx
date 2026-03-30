@@ -1,15 +1,6 @@
-/* ============================================================
-   NAVBAR COMPONENT
-   - Sticks to top of every page
-   - Changes style after scrolling 20px (adds blur + border)
-   - Highlights active route with neon pink underline
-   - Collapses to hamburger menu on mobile
-   ============================================================ */
-
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-/* ── Navigation links — add or remove pages here ── */
 const NAV_LINKS = [
   { path: '/',         label: 'Home'     },
   { path: '/about',    label: 'About'    },
@@ -21,10 +12,8 @@ export default function Navbar() {
   const [isMobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
-  /* Close mobile menu when route changes */
   useEffect(() => { setMobileOpen(false); }, [location]);
 
-  /* Listen for scroll to toggle the "scrolled" navbar style */
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', onScroll);
@@ -61,7 +50,6 @@ export default function Navbar() {
           </span>
         </NavLink>
 
-        {/* ── Desktop Navigation Links ── */}
         <ul className="hidden md:flex items-center gap-2">
           {NAV_LINKS.map(({ path, label }) => (
             <li key={path}>
@@ -81,7 +69,6 @@ export default function Navbar() {
                 {({ isActive }) => (
                   <>
                     {label}
-                    {/* Active page underline indicator */}
                     <span
                       className="absolute bottom-0 left-1/2 -translate-x-1/2 h-px transition-all duration-300"
                       style={{
@@ -97,14 +84,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* ── Mobile Hamburger Button ── */}
         <button
           className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMobileOpen(prev => !prev)}
           aria-label="Toggle navigation menu"
           aria-expanded={isMobileOpen}
         >
-          {/* Three lines that animate into an X when open */}
           <span className={`block w-6 h-0.5 transition-all duration-300 ${isMobileOpen ? 'rotate-45 translate-y-2' : ''}`}
                 style={{ backgroundColor: 'var(--pink)' }} />
           <span className={`block w-6 h-0.5 transition-all duration-300 ${isMobileOpen ? 'opacity-0' : ''}`}
@@ -114,7 +99,6 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* ── Mobile Dropdown Menu ── */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
           isMobileOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
