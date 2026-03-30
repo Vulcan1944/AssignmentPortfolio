@@ -48,14 +48,18 @@ const TIMELINE = [
   {
     year:   '2023 – Present',
     title:  'Bachelor of Information Technology',
-    org:    'Southern Institute of Technology (SIT) — Invercargill, NZ',
-    detail: 'Currently in my third year, studying Web Development, Software Engineering, Databases, and Networking. Working toward a full degree with a focus on practical project-based learning.',
+    org:    'Southern Institute of Technology — Invercargill, NZ',
+    detail: 'Currently in my third year, studying Web Development, Game Development, Databases, and Security. Working toward a full degree with a focus on practical project based learning.',
   },
   {
-    year:   '2022',
-    title:  'Started My I.T Journey',
-    org:    'Self-Directed',
-    detail: 'Began exploring programming, web development, and game development independently — building small projects and developing a solid foundation across multiple disciplines.',
+    year:   '2021',
+    title:  'Construction Certificate',
+    org:    'Southern Institute of Technology — Invercargill, NZ',
+  },
+  {
+    year: '2019',
+    title: 'Butcher Certificate',
+    org: 'Alliance Meatworks - Lorneville'
   },
   {
     year:   '2017',

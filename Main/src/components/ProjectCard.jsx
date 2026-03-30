@@ -1,9 +1,9 @@
 export default function ProjectCard({ project, index = 0 }) {
-  const { title, description, tags, github, demo, status, image, imageAlt } = project;
+  const { title, description, tags, status, image, imageAlt } = project;
 
   const STATUS_STYLES = {
     'In Progress': { color: '#ffe600', borderColor: '#ffe60040', bg: '#ffe60012', dot: false },
-    'Complete':    { color: '#c090d8', borderColor: '#c090d840', bg: '#c090d812', dot: false },
+    'Complete':    { color: '#ffe600', borderColor: '#ffe600', bg: '#09bd09b4', dot: false },
   };
   const statusStyle = STATUS_STYLES[status] || STATUS_STYLES['Complete'];
 
