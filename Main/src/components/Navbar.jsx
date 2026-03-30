@@ -52,12 +52,12 @@ export default function Navbar() {
           style={{ color: 'var(--pink)' }}
           aria-label="Home"
         >
-          KH
+          Keegan Huxford
           <span
             className="text-xs ml-1 tracking-[0.2em] font-mono"
             style={{ color: 'var(--text-dim)' }}
           >
-            .DEV
+            .Portfollio
           </span>
         </NavLink>
 
