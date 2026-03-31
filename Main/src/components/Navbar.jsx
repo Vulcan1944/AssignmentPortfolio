@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 const NAV_LINKS = [
-  { path: '/',         label: 'Home'     },
-  { path: '/about',    label: 'About'    },
-  { path: '/projects', label: 'Projects' },
+  { path: '/',          label: 'Home'     },
+  { path: '/about',     label: 'About'    },
+  { path: '/projects',  label: 'Projects' },
+  { path: '/creative',  label: 'Creative' },
 ];
 
 export default function Navbar() {
@@ -34,19 +35,18 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
 
-        {/* ── Logo ── */}
         <NavLink
           to="/"
           className="font-display font-black text-lg tracking-widest uppercase"
           style={{ color: 'var(--pink)' }}
           aria-label="Home"
         >
-          Keegan Huxford
+          KH
           <span
             className="text-xs ml-1 tracking-[0.2em] font-mono"
             style={{ color: 'var(--text-dim)' }}
           >
-            .Portfolio
+            .DEV
           </span>
         </NavLink>
 
